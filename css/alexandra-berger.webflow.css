@@ -1610,6 +1610,7 @@ figcaption {
 
 .project-video a, .social-post a { color: inherit; }
 .bazar-section { text-align: center; }
+.bazar-section h2, .bazar-section h3 { color: var(--tertiary); }
 .social-post { margin: 0 auto; width: 100%; max-width: 510px; }
 .social-post iframe {
   width: 100%;
