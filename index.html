@@ -109,12 +109,12 @@ color: white;
       </div>
     </section>
     <section class="tabs">
-      <div data-current="Photo &amp; vidéo" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
+      <div data-current="Graphisme" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
         <div class="tab_container w-tab-menu">
-          <a data-w-tab="Graphisme" class="btn is-outline w-inline-block w-tab-link">
+          <a data-w-tab="Graphisme" class="btn is-outline w-inline-block w-tab-link w--current">
             <div class="no-wrap">Graphisme</div>
           </a>
-          <a data-w-tab="Photo &amp; vidéo" class="btn is-outline w-inline-block w-tab-link w--current">
+          <a data-w-tab="Photo &amp; vidéo" class="btn is-outline w-inline-block w-tab-link">
             <div class="no-wrap">Photo &amp; vidéo</div>
           </a>
           <a data-w-tab="Bazar d’Alex" class="btn is-outline w-inline-block w-tab-link">
@@ -122,7 +122,7 @@ color: white;
           </a>
         </div>
         <div class="tabs-content w-tab-content">
-          <div data-w-tab="Graphisme" class="w-tab-pane">
+          <div data-w-tab="Graphisme" class="w-tab-pane w--tab-active">
             <div class="w-layout-grid grid-12c">
               <a id="w-node-cbf27db3-5605-fc63-5a64-6a42e8dc7642-e8dc7642" href="graphisme/alx.html" class="projet_item w-inline-block"><img loading="lazy" src="images/alx-projets-09.avif" alt="" sizes="(max-width: 700px) 100vw, (max-width: 767px) 700px" srcset="images/alx-projets-09-p-500.avif 500w, images/alx-projets-09-p-800.avif 800w, images/alx-projets-09-p-1080.avif 1080w, images/alx-projets-09.avif 1260w">
                 <div class="w-layout-vflex projet_hover">
@@ -141,7 +141,7 @@ color: white;
               </a>
               <a id="w-node-cbf27db3-5605-fc63-5a64-6a42e8dc7642-e8dc7642" href="graphisme/theatre-de-loeuvre.html" class="projet_item w-inline-block"><img loading="lazy" src="images/alx-projets-06.avif" alt="" sizes="(max-width: 700px) 100vw, (max-width: 767px) 700px" srcset="images/alx-projets-06-p-500.avif 500w, images/alx-projets-06-p-800.avif 800w, images/alx-projets-06-p-1080.avif 1080w, images/alx-projets-06.avif 1260w">
                 <div class="w-layout-vflex projet_hover">
-                  <div class="title-1 text-wrap-balance">AFFICHE THÉÂTRE DE L’ŒUVRE</div>
+                  <div class="title-1 text-wrap-balance">Théâtre de l’Œuvre</div>
                 </div>
               </a>
               <a id="w-node-cbf27db3-5605-fc63-5a64-6a42e8dc7642-e8dc7642" href="graphisme/musee-miniature-cinema.html" class="projet_item w-inline-block"><img loading="lazy" src="images/alx-projets-05.avif" alt="" sizes="(max-width: 700px) 100vw, (max-width: 767px) 700px" srcset="images/alx-projets-05-p-500.avif 500w, images/alx-projets-05-p-800.avif 800w, images/alx-projets-05-p-1080.avif 1080w, images/alx-projets-05.avif 1260w">
@@ -154,9 +154,13 @@ color: white;
                   <div class="title-1 text-wrap-balance">COLLECTION SOUQUET</div>
                 </div>
               </a>
+              <a href="graphisme/semaine-de-la-pop-philosophie.html" class="projet_item pop-project w-inline-block">
+                <img loading="lazy" src="images/livret-pop-philo.webp" alt="">
+                <div class="w-layout-vflex projet_hover"><div class="title-1 text-wrap-balance">SEMAINE DE LA POP PHILOSOPHIE</div></div>
+              </a>
             </div>
           </div>
-          <div data-w-tab="Photo &amp; vidéo" class="w-tab-pane w--tab-active">
+          <div data-w-tab="Photo &amp; vidéo" class="w-tab-pane">
             <div class="w-layout-grid grid-12c">
               <a id="w-node-cbf27db3-5605-fc63-5a64-6a42e8dc7642-e8dc7642" href="photographie/spectacle-vivant.html" class="projet_item w-inline-block"><img loading="lazy" src="images/projets-photo-01.avif" alt="" sizes="(max-width: 700px) 100vw, (max-width: 767px) 700px" srcset="images/projets-photo-01-p-500.avif 500w, images/projets-photo-01.avif 700w">
                 <div class="w-layout-vflex projet_hover">
@@ -193,10 +197,63 @@ color: white;
             </div>
           </div>
           <div data-w-tab="Bazar d’Alex" class="w-tab-pane">
-            <div class="w-layout-vflex bazar_tempo">
-              <div class="text-color-tertiary text-align-center title-1">OUPS !<br>Page bientôt dispo !</div>
-              <div class="text-align-center">Mes créations spontanées, crochets, illustrations, DIY…<br>à découvrir bientôt !</div>
-            </div>
+            <section class="bazar-section">
+              <h2>Crochet</h2>
+              <div class="post-controls" hidden>
+                <button type="button" data-step="-1" aria-label="Crochet — publication précédente">←</button>
+                <span aria-live="polite">1 / 5</span>
+                <button type="button" data-step="1" aria-label="Crochet — publication suivante">→</button>
+              </div>
+              <figure class="social-post">
+                <h3>L’accessoire parfait pour l’été</h3>
+                <iframe loading="lazy" src="https://www.instagram.com/p/DadfoXzxiuJ/embed/" title="L’accessoire parfait pour l’été" allowfullscreen></iframe>
+                <figcaption><a href="https://www.instagram.com/p/DadfoXzxiuJ/" aria-label="L’accessoire parfait pour l’été sur Instagram">Voir sur Instagram</a></figcaption>
+              </figure>
+              <figure class="social-post">
+                <h3>Les petits chouchous</h3>
+                <iframe loading="lazy" src="https://www.instagram.com/p/DZiKdZKhQqz/embed/" title="Les petits chouchous" allowfullscreen></iframe>
+                <figcaption><a href="https://www.instagram.com/p/DZiKdZKhQqz/" aria-label="Les petits chouchous sur Instagram">Voir sur Instagram</a></figcaption>
+              </figure>
+              <figure class="social-post">
+                <h3>21 fleurs plus tard</h3>
+                <iframe loading="lazy" src="https://www.instagram.com/p/DWy4MW3jNnV/embed/" title="21 fleurs plus tard" allowfullscreen></iframe>
+                <figcaption><a href="https://www.instagram.com/p/DWy4MW3jNnV/" aria-label="21 fleurs plus tard sur Instagram">Voir sur Instagram</a></figcaption>
+              </figure>
+              <figure class="social-post">
+                <h3>Mon pull de rêve</h3>
+                <iframe loading="lazy" src="https://www.instagram.com/p/DVjOpv9l2bE/embed/" title="Mon pull de rêve" allowfullscreen></iframe>
+                <figcaption><a href="https://www.instagram.com/p/DVjOpv9l2bE/" aria-label="Mon pull de rêve sur Instagram">Voir sur Instagram</a></figcaption>
+              </figure>
+              <figure class="social-post">
+                <h3>Un bonnet pour l’hiver</h3>
+                <iframe loading="lazy" src="https://www.instagram.com/p/DVoXEpmDKUS/embed/" title="Un bonnet pour l’hiver" allowfullscreen></iframe>
+                <figcaption><a href="https://www.instagram.com/p/DVoXEpmDKUS/" aria-label="Un bonnet pour l’hiver sur Instagram">Voir sur Instagram</a></figcaption>
+              </figure>
+            </section>
+            <section class="bazar-section">
+              <h2>Craie</h2>
+              <div class="post-controls" hidden>
+                <button type="button" data-step="-1" aria-label="Craie — publication précédente">←</button>
+                <span aria-live="polite">1 / 2</span>
+                <button type="button" data-step="1" aria-label="Craie — publication suivante">→</button>
+              </div>
+              <figure class="social-post">
+                <iframe loading="lazy" src="https://www.instagram.com/p/DaxQwgyh8GC/embed/" title="Craie — publication 1" allowfullscreen></iframe>
+                <figcaption><a href="https://www.instagram.com/p/DaxQwgyh8GC/" aria-label="Craie — publication 1 sur Instagram">Voir sur Instagram</a></figcaption>
+              </figure>
+              <figure class="social-post">
+                <iframe loading="lazy" src="https://www.instagram.com/p/DXpdGqRjNWF/embed/" title="Craie — publication 2" allowfullscreen></iframe>
+                <figcaption><a href="https://www.instagram.com/p/DXpdGqRjNWF/" aria-label="Craie — publication 2 sur Instagram">Voir sur Instagram</a></figcaption>
+              </figure>
+            </section>
+            <section class="bazar-section">
+              <h2>Créations diverses</h2>
+
+              <figure class="social-post">
+                <iframe loading="lazy" src="https://www.instagram.com/p/DVeD4ORlxii/embed/" title="Créations diverses — publication 1" allowfullscreen></iframe>
+                <figcaption><a href="https://www.instagram.com/p/DVeD4ORlxii/" aria-label="Créations diverses — publication 1 sur Instagram">Voir sur Instagram</a></figcaption>
+              </figure>
+            </section>
           </div>
         </div>
       </div>
@@ -248,5 +305,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 </style>
+  <script src="js/bazar.js"></script>
 </body>
 </html>

@@ -1574,3 +1574,70 @@ figcaption {
   font-style: normal;
   font-display: swap;
 }
+.portfolio-section + .portfolio-section,
+.bazar-section + .bazar-section {
+  margin-top: clamp(3rem, 7vw, 6rem);
+}
+
+.portfolio-section > h2, .portfolio-section > p,
+.bazar-section h2, .social-post h3 {
+  margin: 0 0 1.25rem;
+}
+
+.book-photo, .pop-project img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.pop-project { grid-column: span 6; }
+.pop-project img { aspect-ratio: 1.6; object-fit: cover; }
+
+.book-pair, .festival-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  gap: 20px;
+}
+
+.project-video { grid-column: span 4; min-width: 0; }
+.project-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 12px;
+}
+
+.project-video a, .social-post a { color: inherit; }
+.bazar-section { text-align: center; }
+.social-post { margin: 0 auto; width: 100%; max-width: 510px; }
+.social-post iframe {
+  width: 100%;
+  height: min(690px, 85vh);
+  border: 0;
+  border-radius: 12px;
+  background: white;
+}
+
+.post-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.post-controls[hidden], .social-post[hidden] { display: none; }
+.post-controls button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+  .project-video { grid-column: 1 / -1; }
+}
